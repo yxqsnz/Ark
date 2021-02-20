@@ -31,7 +31,7 @@ class Misc(commands.Cog):
     return await ctx.send(':rocket: Showing SpaceX launch histories!', embed=embed)
 
  @commands.command()
- async def history(ctx, id=None):
+ async def history(self,ctx, id=None):
     """
     Shows a event history based on its ID.
     Usage example:
@@ -102,7 +102,7 @@ class Misc(commands.Cog):
 
 
  @commands.command()
- async def company(ctx):
+ async def company(self,ctx):
     """
     Get SpaceX company information.
     """
@@ -127,7 +127,7 @@ class Misc(commands.Cog):
 
 
  @commands.command()
- async def missions(ctx):
+ async def missions(self,ctx):
     """
     Lists all missions.
     """
